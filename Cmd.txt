@@ -1,0 +1,14 @@
+
+CMD Commands: Open Command Prompt As Admin And type these commands Next Restart pc !
+
+fsutil behavior query memoryusage
+
+fsutil behavior set memoryusage 2
+
+bcdedit /set increaseuserva 8000   
+
+
+
+
+
+Hint sometimes you can right click windows icon 

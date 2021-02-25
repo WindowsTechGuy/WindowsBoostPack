@@ -1,0 +1,11 @@
+
+  ▫️ Recommended DNS Server FOR US 📶
+  You may find you get better results using the Automatic settings* (so try both)
+ Primary DNS: 8.8.8.8
+ Secondary DNS: 8.8.4.4
+ 
+ 
+  ▫️ Recommended DNS Server FOR EUROPE 📶
+  You may find you get better results using the Automatic settings* (so try both)
+ Primary DNS: 1.1.1.1
+ Secondary DNS: 1.0.0.1

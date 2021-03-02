@@ -1,0 +1,58 @@
+Make priority of gaming responsiveness
+MMCSS, the abbreviation of Multimedia Class Scheduler, is a Windows service that allows multimedia applications to get prioritized access to CPU for time-sensitive processing. To ensure games get prioritized access to CPU resources, we can tweak the registry. Here are detailed steps.
+
+Step 1: Hit Windows key + R shortcut to launch a Run box. Then type regedit and hit Enter to open Registry Editor window.
+Step 2: Navigate to the following path in the left panel:
+
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games
+   
+  
+Step 3: Double-click GPU Priority, Priority and Scheduling Category respectively. Tweak the values of GPU Priority to 8, Priority to 6, Scheduling Category to High. After this change, you might realize that the internet speed is improved as well as gaming performance. 
+   
+   
+     Disable Windows Startup Delay
+Whenever you disable any startup item, it still lives in the startup tray but denies to load up during the startup. If you experience a delay in Windows startup, you can make use of this registry tweak. Microsoft has by default configured to delay the apps to start with Windows. Disabling this will decrease the booting time and it will assist you to optimize windows 10 performance effectively.
+
+Open the registry editor and expand this address. You can copy and paste this in the address bar.
+
+Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer
+
+Expand the folder called ‘Serialize’. If you can’t find it there, right-click on the ‘Explorer’ folder and click on ‘New’ and select ‘Key’. It will create a new folder with the name of ‘New Key#1’. Right-click on it and rename the folder as ‘Serialize’.
+
+Right-click on the new folder ‘Serialize’ and follow ‘New’ and select ‘Dword’. You will need to rename the new ‘Dword key’ to ‘StartupDelayInMSec’ and press enter. Now you need to double-click on the same and change the value to numerical 0 (Zero). And you are all set!
+
+ 
+ Increase the hosting buffer size
+The size of hosting buffer reflects the ability to host data or services in a high-latency environment. By default, the system sets the buffer size as 16384 bytes but sometimes it is not enough if the amount of memory is small. Tweaking this value by Registry Editor will help reduce the impact of lag while gaming. Here is a guide.
+
+Step 1: Open Registry Editor window and navigate to the following path:
+
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+
+Step 2: Right-click the blank space on the right panel. Move the mouse cursor over New and select DWORD (32-bit or 64bit) Value option.
+Change the DefaultTTL
+Time to Live (TTL) tells routers the time a packet should stay in the air while attempting delivery before discarding, which can prevent a data packet from circulating indefinitely. If the value is high, your computer will waste much time to wait for a failed packet to deliver decreasing the efficiency of your network. Network plays a crucial role in gaming. So, it is good for gaming to decrease this value by Registry Editor.
+
+Step 1: Open Registry Editor window and navigate to the following path:
+
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+Step 2: Double-click the DefaultTTL in the right side and set its value to 1-255. A recommended value is 64. If you can't find DefaultTTL registry, you need to create a new value and name it as DefaultTTL. That's all. This registry tweak can also increase the internet speed.Step 3: Name it SizReqBuf and double-click it and set its value to 17424.
+
+Change the DefaultTTL
+Time to Live (TTL) tells routers the time a packet should stay in the air while attempting delivery before discarding, which can prevent a data packet from circulating indefinitely. If the value is high, your computer will waste much time to wait for a failed packet to deliver decreasing the efficiency of your network. Network plays a crucial role in gaming. So, it is good for gaming to decrease this value by Registry Editor.
+
+Step 1: Open Registry Editor window and navigate to the following path:
+
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+Step 2: Double-click the DefaultTTL in the right side and set its value to 1-255. A recommended value is 64. If you can't find DefaultTTL registry, you need to create a new value and name it as DefaultTTL. That's all. This registry tweak can also increase the internet speed.
+
+
+
+Disable Nagle's Algorithm
+Nagle's algorithm is a means of improving the efficiency of network transmissions by combining several small packets into a single, large. It is enabled by Windows system by default. However, it might increase the latency or ping while gaming. So, it is recommended to disable it by Registry Editor.
+
+Step 1: Open Registry Editor window and navigate to the following path:
+
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+Step 4: Name these two values TcpAckFrequency and TcpNoDelay. Then double-click them and tweak their value to 1. Finally, Nagle's Algorithm will be disabled.
+

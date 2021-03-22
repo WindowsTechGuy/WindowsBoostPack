@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @WindowsTechGuy
+- 👀 I’m interested in Pc Tech
+- 🌱 I’m currently learning ... C C++
+- 💞️ I’m looking to collaborate on ... Anything PC Related
+- 📫 How to reach me ... Email Me at jm4834329@gmail.com

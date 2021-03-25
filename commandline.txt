@@ -1,0 +1,11 @@
+-noquanttransform
+-adapter
+-FrameQueueLimit 1
+-ignoreDifferentVideoCard
+-disableHyperthreading
+-hdr
+
+
+
+
+

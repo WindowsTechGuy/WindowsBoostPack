@@ -1,0 +1,18 @@
+UltimatePerformance: powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+Run CMD as administrator and type:
+
+Del /S /F /Q %temp%
+(clears the Userprofile Temp folder)
+
+Del /S /F /Q %Windir%\Temp
+(This clears the Windows temp folder)
+
+bcdedit /set disabledynamictick yes
+(This command forces the kernel timer to constantly poll for interrupts instead of wait for them)
+
+bcdedit /set useplatformtick yes 
+(Forces the clock to be backed by a platform source, no synthetic timers are allowed)
+
+bcdedit /set useplatformclock false
+(TSC is reliable and will give you the lowest latency and highest fps)

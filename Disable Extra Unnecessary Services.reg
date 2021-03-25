@@ -12,6 +12,10 @@ Windows Registry Editor Version 5.00                                            
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FontCache3.0.0.0]
 "Start"=dword:00000004
 
+;Disable Human Interface Device Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hidserv]
+"Start"=dword:00000004
+
 ;Disable Graphics performance monitor service
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc]
 "Start"=dword:00000004

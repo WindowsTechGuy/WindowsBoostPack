@@ -1,0 +1,4 @@
+Disable Nagle's Algorithm was removed due to a mistake, Each person has a different name for their NIC. The correct way is to do it manually and not by
+a registry file, I'm sorry for any confusion this might have caused and in a future video I will show how to correctly Disable Nagle's Algorithm.
+
+-Adamx

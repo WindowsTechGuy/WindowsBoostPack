@@ -1,4 +1,4 @@
-Windows Registry Editor Version 5.00
+Windows Registry Editor Version 5.00 --- Registry File By Adamx
 
 ; Disable Power Throttling
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]

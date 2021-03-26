@@ -1,2 +1,4 @@
 Disable Windows 10 Lockscreen
 The lock screen is a nice added layer of security on your Windows PC, requiring a password or PIN for you to log back in. If you feel secure in the security of your PC, you can turn the lock screen off altogether.
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows

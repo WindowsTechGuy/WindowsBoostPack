@@ -1,0 +1,74 @@
+Disable the Delay in Windows Startup
+If you are facing delay in Windows startup, you can apply this registry tweak. Microsoft has added a subtle delay to help apps start with Windows. You can disable this to decrease the booting time.
+
+So, how can you do it?
+
+Open the registry editor and navigate to HKEY_CURRENT_USER\ Software\ Microsoft\ Windows\ CurrentVersion\ Explorer. Can you see a folder named Serialize there?
+
+In case you can’t find the same, just right-click on Explorer and follow New>> Key
+
+
+Windows 10 Registry Hacks for Better Performance
+The Windows registry contains all the information on how your computer runs. You can tweak your system for better performance by properly editing it using the dedicated registry editor.
+
+I know you are looking for Win 10 registry hacks. In this article, you are going to get a few of them, which can result in the betterment of the performance of your system.
+
+Along with the increase in performance, you can also tweak the appearance using a few of the Windows 10 registry tricks shared here.
+
+So, are you ready? Here you go.
+
+Windows 10 Registry Hacks
+windows 10 registry hacks
+The given below are not the only Windows 10 registry tricks. Still, I chose them as the best among all.
+
+#1. Remove OneDrive Icon from File Explorer
+On Windows 10 file explorer, you can see a dedicated OneDrive icon. If you are a person who doesn’t use OneDrive, the icon is surely of no uses.
+
+Can you get rid of them? Of course, you can! The following is the registry tweak for it.
+
+
+ 
+You have to open registry editor first. Press win key+ R and enter regedit into the run dialogue box that comes up. You will be asked to provide admin privileges.
+
+Once you press Yes, you can see the registry editor live in action.
+
+Now you have to move on to the location, HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}.
+
+
+ 
+You can quickly find the last entry, follow Edit>> Find option.
+
+
+ 
+From the right panel, double click on System.IsPinnedToNameSpaceTree. Finally, you have to change the value to 0.
+
+Open the file explorer now and, you can’t find OneDrive icon there.
+
+#2. Disable the Delay in Windows Startup
+If you are facing delay in Windows startup, you can apply this registry tweak. Microsoft has added a subtle delay to help apps start with Windows. You can disable this to decrease the booting time.
+
+So, how can you do it?
+
+Open the registry editor and navigate to HKEY_CURRENT_USER\ Software\ Microsoft\ Windows\ CurrentVersion\ Explorer. Can you see a folder named Serialize there?
+
+In case you can’t find the same, just right-click on Explorer and follow New>> Key.
+
+
+ 
+Then, right-click on Serialize and go to New>> Dword value. You have to rename the new Dword key to StartupDelayInMSec. Double click on the same and change the value to 0.
+
+There you go! From now on, you can experience a slightly better Windows booting.
+
+#3. Clear Windows Page File on Shutting Down
+Windows creates a page file to use your hard disk as a virtual memory when your system doesn’t have enough physical RAM. The size of the file can be greater than that of your physical RAM. Obviously, it will decrease the space on your hard disk by a great margin.
+
+So, you can do a simple registry tweak to automatically delete the page file on each shut down.
+
+
+ 
+Open registry editor and navigate to HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Session Manager \ Memory Management. Once you get there, look at the right panel and right-click on ClearPageFileAtShutDown. Choose Modify from the upcoming menu and change its value to 1. There you go!
+
+Make Desktop Menus Appear Faster
+Do you think the animation is not that fast? Do you want menus on Windows 10 to appear faster than usual?
+
+Open registry editor and follow HKEY_CURRENT_USER\Control Panel\Desktop. You have to double-click on MenuShowDelay. The value should be decreased.
